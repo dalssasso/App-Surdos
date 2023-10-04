@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Surdos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/cf6fa412bd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="backgroundcontainer">
+  <div class="speech">
+    <p>RECONHECIMENTO DE VOZ</p>
+    <textarea id="textarea"></textarea>
+    <div>
+      <button id="btnGravar"><i class="fas fa-microphone"></i></button>
+      <button id="btnParar" disabled><i class="fas fa-microphone-slash"></i></button>
+      <button id="btnBaixar"><i class="fas fa-download"></i></button>
+      <button id="btnLimpar"><i class="fas fa-trash-alt"></i></button>
+      <button id="btn"><i class="fa-solid fa-arrow-right"></i></button>
+    </div>
+  </div>
+  <div id="paragrafo"> 
+    <p id="palavra">Texto:</p>
+    <p class="texto_recebido"></p>
+  </div>
+  <aside id="rollbar">
+  <div class="containerimagens">
+ </div>
+  <div id="containertextos">
+  </div>
+</aside>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <script src="index.js"></script>
+</body>
+</html>

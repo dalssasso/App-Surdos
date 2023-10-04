@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+
+textarea::-webkit-scrollbar {
+  width: 12px;
+  background-color: rgba(169, 169, 169, 0.474); 
+}
+
+textarea::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: rgba(169, 169, 169, 0.474); 
+}
+
+p {
+  color: rgb(0, 0, 0);
+  font-size: 3rem;
+}
+.backgroundcontainer{
+  height: 100%;
+  width: 100%;
+  background-color:rgb(255, 255, 255);
+  display: inline-flex;
+}
+#paragrafo{
+  width: 30vw;
+  height: 50vw;
+  background-color: rgb(255, 255, 255);
+  }
+  .containerimagens{
+    width: 221px;
+    height: 195px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+ }
+  .texto_recebido{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+    line-height: 1;
+  }
+  #palavra{
+  align-items: center;
+  }
+.speech{
+  width: 28vw;
+  height: 50vw;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+#rollbar{
+width: 700px;;
+overflow: hidden;
+overflow-y: scroll;
+height: 90vh;
+padding: 0.5em;
+  background-color:rgb(255, 255, 255);
+  display: inline-flex;
+}
+
+#textarea {
+  width: 80%;
+  height: 80%;
+  margin: 20px;
+  padding: 1rem;
+  border: inset;
+  border-color: black;
+  outline: 0;
+  text-align: justify;
+}
+
+.fas {
+  font-weight: 600;
+  font-size: 3rem;
+  color: black;
+  min-width: 4rem;
+}
+
+button { 
+  padding: 15px;
+  border: auto;
+  border-color: black;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.fa-trash-alt{
+  color: red;
+}
+
+@media(max-width: 700px) {
+  p {
+    font-size: 2rem;
+  }
+  
+  .fas {
+    min-width: 3rem;
+  }
+}
